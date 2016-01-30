@@ -1,0 +1,4 @@
+/* Display name and description for this extension. */
+"CFBundleDisplayName" = "Currency widget";
+"com.apple.notificationcenter.widget.description" = "Currency widget";
+

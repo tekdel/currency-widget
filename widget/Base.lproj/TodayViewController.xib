@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="widget" customModuleProvider="target">
+            <connections>
+                <outlet property="brentValue" destination="xvf-Oy-Uzy" id="cLG-3M-JOA"/>
+                <outlet property="eurValue" destination="Ce0-yI-UkD" id="eTM-qw-2rj"/>
+                <outlet property="listViewController" destination="vLu-t9-fwO" id="cso-Rh-DC1"/>
+                <outlet property="usdValue" destination="6oJ-QI-qrJ" id="tiD-rP-Cy4"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="53"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fig-xE-mtg">
+                    <rect key="frame" x="132" y="7" width="67" height="11"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="11" id="Z82-pu-YvG"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="рублей за евро" id="VeC-HM-iRa">
+                        <font key="font" metaFont="system" size="8"/>
+                        <color key="textColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YCf-Ix-AjH">
+                    <rect key="frame" x="221" y="7" width="91" height="11"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="86.5" id="Aal-88-nhb"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="8" id="JlV-QI-Kqy"/>
+                        <constraint firstAttribute="height" constant="11" id="ObN-rx-98Y"/>
+                        <constraint firstAttribute="width" secondItem="YCf-Ix-AjH" secondAttribute="height" multiplier="83:8" constant="-27.625" id="Yl3-yl-cDN"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="долларов за барель" id="y3C-3q-eDE">
+                        <font key="font" metaFont="system" size="8"/>
+                        <color key="textColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6oJ-QI-qrJ">
+                    <rect key="frame" x="17" y="20" width="94" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6oJ-QI-qrJ" secondAttribute="height" multiplier="30:11" id="mOg-kx-8mp"/>
+                        <constraint firstAttribute="height" constant="33" id="q7m-G6-N4K"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="100.00" id="bhZ-f9-asB">
+                        <font key="font" metaFont="system" size="27"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rtL-CK-Ovk">
+                    <rect key="frame" x="23" y="7" width="81" height="11"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="рублей за доллар" placeholderString="фывф" id="j7m-Ta-8MN">
+                        <font key="font" metaFont="system" size="8"/>
+                        <color key="textColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ce0-yI-UkD">
+                    <rect key="frame" x="122" y="20" width="87" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="33" id="7qz-xE-Swc"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="83" id="jeZ-2y-KGK"/>
+                        <constraint firstAttribute="width" constant="83" id="oT9-Rp-4d6"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="83" id="zba-9c-UnK"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="130.47" id="jeM-y4-kYh">
+                        <font key="font" metaFont="system" size="27"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xvf-Oy-Uzy">
+                    <rect key="frame" x="219" y="20" width="94" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="33" id="9ad-QJ-dnT"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="33" id="CV7-Mf-Orr"/>
+                        <constraint firstAttribute="width" secondItem="xvf-Oy-Uzy" secondAttribute="height" multiplier="30:11" id="Dgg-Yj-Bpb"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="33" id="Psm-08-EQz"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="S46-l6-Rx3"/>
+                        <constraint firstAttribute="width" secondItem="xvf-Oy-Uzy" secondAttribute="height" multiplier="30:11" id="VPJ-WP-eLh"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="90" id="fwB-GZ-lyl"/>
+                        <constraint firstAttribute="width" constant="90" id="hMh-RB-zca"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="90" id="o9w-gU-aDf"/>
+                        <constraint firstAttribute="height" constant="33" id="shl-N0-byg"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="000.00" id="yHv-oe-DmD">
+                        <font key="font" metaFont="system" size="27"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xvf-Oy-Uzy" firstAttribute="baseline" secondItem="Ce0-yI-UkD" secondAttribute="baseline" id="9Bc-dC-XSU"/>
+                <constraint firstItem="Ce0-yI-UkD" firstAttribute="leading" secondItem="6oJ-QI-qrJ" secondAttribute="trailing" constant="15" id="Au0-70-9qk"/>
+                <constraint firstItem="Ce0-yI-UkD" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="AyR-hc-KcB"/>
+                <constraint firstAttribute="height" constant="53" id="B84-cx-6Et"/>
+                <constraint firstAttribute="bottom" secondItem="rtL-CK-Ovk" secondAttribute="bottom" constant="7" id="C6h-Ft-EI8"/>
+                <constraint firstItem="YCf-Ix-AjH" firstAttribute="leading" secondItem="fig-xE-mtg" secondAttribute="trailing" constant="26" id="HxH-d4-UEO"/>
+                <constraint firstItem="fig-xE-mtg" firstAttribute="leading" secondItem="rtL-CK-Ovk" secondAttribute="trailing" constant="32" id="LeE-OW-qUg"/>
+                <constraint firstItem="rtL-CK-Ovk" firstAttribute="centerX" secondItem="6oJ-QI-qrJ" secondAttribute="centerX" id="Ljq-Rr-zrq"/>
+                <constraint firstItem="fig-xE-mtg" firstAttribute="baseline" secondItem="YCf-Ix-AjH" secondAttribute="baseline" id="Oxm-pY-odK"/>
+                <constraint firstAttribute="width" constant="331" id="VFl-os-TLs"/>
+                <constraint firstItem="xvf-Oy-Uzy" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Ztu-1Q-8Yf"/>
+                <constraint firstItem="fig-xE-mtg" firstAttribute="baseline" secondItem="rtL-CK-Ovk" secondAttribute="baseline" id="bYP-YB-IcM"/>
+                <constraint firstItem="YCf-Ix-AjH" firstAttribute="centerX" secondItem="xvf-Oy-Uzy" secondAttribute="centerX" id="fLK-GU-qlT"/>
+                <constraint firstItem="xvf-Oy-Uzy" firstAttribute="leading" secondItem="Ce0-yI-UkD" secondAttribute="trailing" constant="14" id="gOG-NH-cey"/>
+                <constraint firstItem="Ce0-yI-UkD" firstAttribute="centerX" secondItem="fig-xE-mtg" secondAttribute="centerX" id="pZh-8h-iaa"/>
+                <constraint firstAttribute="width" secondItem="Hz6-mo-xeY" secondAttribute="height" multiplier="83:23" constant="139.7391304347826" id="wXL-N6-e3E"/>
+                <constraint firstItem="Ce0-yI-UkD" firstAttribute="baseline" secondItem="6oJ-QI-qrJ" secondAttribute="baseline" id="xdR-zu-C1Q"/>
+            </constraints>
+            <point key="canvasLocation" x="444" y="526"/>
+        </customView>
+        <viewController id="vLu-t9-fwO" customClass="NCWidgetListViewController">
+            <connections>
+                <outlet property="delegate" destination="-2" id="vCn-hJ-OcV"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="nq9-gf-VjV"/>
+            </connections>
+        </viewController>
+        <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" id="HRZ-Zm-BIs">
+            <rect key="frame" x="0.0" y="0.0" width="89" height="33"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <point key="canvasLocation" x="462.5" y="642.5"/>
+        </stackView>
+    </objects>
+</document>

@@ -13,6 +13,13 @@
 		6C241D391C5CEA6100F799EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C241D371C5CEA6100F799EE /* Main.storyboard */; };
 		6C241D441C5CEA6100F799EE /* currencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C241D431C5CEA6100F799EE /* currencyTests.swift */; };
 		6C241D4F1C5CEA6100F799EE /* currencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C241D4E1C5CEA6100F799EE /* currencyUITests.swift */; };
+		6C241D631C5CEAB800F799EE /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C241D621C5CEAB800F799EE /* NotificationCenter.framework */; };
+		6C241D681C5CEAB800F799EE /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C241D671C5CEAB800F799EE /* TodayViewController.swift */; };
+		6C241D6A1C5CEAB800F799EE /* ListRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C241D691C5CEAB800F799EE /* ListRowViewController.swift */; };
+		6C241D6D1C5CEAB800F799EE /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C241D6B1C5CEAB800F799EE /* TodayViewController.xib */; };
+		6C241D701C5CEAB800F799EE /* ListRowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C241D6E1C5CEAB800F799EE /* ListRowViewController.xib */; };
+		6C241D741C5CEAB800F799EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C241D721C5CEAB800F799EE /* InfoPlist.strings */; };
+		6C241D771C5CEAB800F799EE /* widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C241D601C5CEAB800F799EE /* widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +37,28 @@
 			remoteGlobalIDString = 6C241D2D1C5CEA6100F799EE;
 			remoteInfo = currency;
 		};
+		6C241D751C5CEAB800F799EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C241D261C5CEA6100F799EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C241D5F1C5CEAB800F799EE;
+			remoteInfo = widget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C241D7B1C5CEAB800F799EE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C241D771C5CEAB800F799EE /* widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6C241D2E1C5CEA6100F799EE /* currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +73,15 @@
 		6C241D4A1C5CEA6100F799EE /* currencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = currencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C241D4E1C5CEA6100F799EE /* currencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currencyUITests.swift; sourceTree = "<group>"; };
 		6C241D501C5CEA6100F799EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C241D601C5CEAB800F799EE /* widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C241D621C5CEAB800F799EE /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6C241D661C5CEAB800F799EE /* widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = widget.entitlements; sourceTree = "<group>"; };
+		6C241D671C5CEAB800F799EE /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		6C241D691C5CEAB800F799EE /* ListRowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowViewController.swift; sourceTree = "<group>"; };
+		6C241D6C1C5CEAB800F799EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		6C241D6F1C5CEAB800F799EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ListRowViewController.xib; sourceTree = "<group>"; };
+		6C241D711C5CEAB800F799EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C241D731C5CEAB800F799EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +106,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C241D5D1C5CEAB800F799EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C241D631C5CEAB800F799EE /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +123,8 @@
 				6C241D301C5CEA6100F799EE /* currency */,
 				6C241D421C5CEA6100F799EE /* currencyTests */,
 				6C241D4D1C5CEA6100F799EE /* currencyUITests */,
+				6C241D641C5CEAB800F799EE /* widget */,
+				6C241D611C5CEAB800F799EE /* Frameworks */,
 				6C241D2F1C5CEA6100F799EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +135,7 @@
 				6C241D2E1C5CEA6100F799EE /* currency.app */,
 				6C241D3F1C5CEA6100F799EE /* currencyTests.xctest */,
 				6C241D4A1C5CEA6100F799EE /* currencyUITests.xctest */,
+				6C241D601C5CEAB800F799EE /* widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +170,36 @@
 			path = currencyUITests;
 			sourceTree = "<group>";
 		};
+		6C241D611C5CEAB800F799EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C241D621C5CEAB800F799EE /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C241D641C5CEAB800F799EE /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				6C241D671C5CEAB800F799EE /* TodayViewController.swift */,
+				6C241D691C5CEAB800F799EE /* ListRowViewController.swift */,
+				6C241D6B1C5CEAB800F799EE /* TodayViewController.xib */,
+				6C241D6E1C5CEAB800F799EE /* ListRowViewController.xib */,
+				6C241D711C5CEAB800F799EE /* Info.plist */,
+				6C241D721C5CEAB800F799EE /* InfoPlist.strings */,
+				6C241D651C5CEAB800F799EE /* Supporting Files */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
+		6C241D651C5CEAB800F799EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C241D661C5CEAB800F799EE /* widget.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,10 +210,12 @@
 				6C241D2A1C5CEA6100F799EE /* Sources */,
 				6C241D2B1C5CEA6100F799EE /* Frameworks */,
 				6C241D2C1C5CEA6100F799EE /* Resources */,
+				6C241D7B1C5CEAB800F799EE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6C241D761C5CEAB800F799EE /* PBXTargetDependency */,
 			);
 			name = currency;
 			productName = currency;
@@ -178,6 +258,23 @@
 			productReference = 6C241D4A1C5CEA6100F799EE /* currencyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		6C241D5F1C5CEAB800F799EE /* widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C241D781C5CEAB800F799EE /* Build configuration list for PBXNativeTarget "widget" */;
+			buildPhases = (
+				6C241D5C1C5CEAB800F799EE /* Sources */,
+				6C241D5D1C5CEAB800F799EE /* Frameworks */,
+				6C241D5E1C5CEAB800F799EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widget;
+			productName = widget;
+			productReference = 6C241D601C5CEAB800F799EE /* widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,6 +296,9 @@
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 6C241D2D1C5CEA6100F799EE;
 					};
+					6C241D5F1C5CEAB800F799EE = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 6C241D291C5CEA6100F799EE /* Build configuration list for PBXProject "currency" */;
@@ -217,6 +317,7 @@
 				6C241D2D1C5CEA6100F799EE /* currency */,
 				6C241D3E1C5CEA6100F799EE /* currencyTests */,
 				6C241D491C5CEA6100F799EE /* currencyUITests */,
+				6C241D5F1C5CEAB800F799EE /* widget */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +343,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C241D5E1C5CEAB800F799EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C241D6D1C5CEAB800F799EE /* TodayViewController.xib in Resources */,
+				6C241D741C5CEAB800F799EE /* InfoPlist.strings in Resources */,
+				6C241D701C5CEAB800F799EE /* ListRowViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +384,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C241D5C1C5CEAB800F799EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C241D681C5CEAB800F799EE /* TodayViewController.swift in Sources */,
+				6C241D6A1C5CEAB800F799EE /* ListRowViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,6 +406,11 @@
 			target = 6C241D2D1C5CEA6100F799EE /* currency */;
 			targetProxy = 6C241D4B1C5CEA6100F799EE /* PBXContainerItemProxy */;
 		};
+		6C241D761C5CEAB800F799EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C241D5F1C5CEAB800F799EE /* widget */;
+			targetProxy = 6C241D751C5CEAB800F799EE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -295,6 +420,30 @@
 				6C241D381C5CEA6100F799EE /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C241D6B1C5CEAB800F799EE /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C241D6C1C5CEAB800F799EE /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		6C241D6E1C5CEAB800F799EE /* ListRowViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C241D6F1C5CEAB800F799EE /* Base */,
+			);
+			name = ListRowViewController.xib;
+			sourceTree = "<group>";
+		};
+		6C241D721C5CEAB800F799EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C241D731C5CEAB800F799EE /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -385,6 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = currency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tekdel.currency;
@@ -397,6 +547,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = currency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tekdel.currency;
@@ -456,6 +607,32 @@
 			};
 			name = Release;
 		};
+		6C241D791C5CEAB800F799EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = widget/widget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tekdel.currency.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6C241D7A1C5CEAB800F799EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = widget/widget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tekdel.currency.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -489,6 +666,14 @@
 			buildConfigurations = (
 				6C241D5A1C5CEA6100F799EE /* Debug */,
 				6C241D5B1C5CEA6100F799EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6C241D781C5CEAB800F799EE /* Build configuration list for PBXNativeTarget "widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C241D791C5CEAB800F799EE /* Debug */,
+				6C241D7A1C5CEAB800F799EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
